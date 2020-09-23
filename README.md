@@ -1,4 +1,4 @@
-# HTML5-CSS3-Applications
+# HTML5-CSS3-Applications: A bunch of pure HTML/CSS creations 😎
 
 # 📝 Survey Form [Link](https://codepen.io/pradneshhhh/full/MWyZqME)
 
