@@ -1,0 +1,85 @@
+body {
+  background-color: hsl(224, 62%, 96%);
+}
+.container {
+  font-family: "Montserrat", sans-serif;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(153, 204, 255, 0.15);
+}
+#header-img {
+  flex-direction: row;
+  width: 60%;
+  padding-left: 15%;
+  padding-top: 1.6%;
+  display: block;
+}
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 1.5%;
+  padding-right: 5%;
+}
+.nav-link {
+  padding-left: 40px;
+  font-size: 175%;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+#services {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+#services-box {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+#howweoperate {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#email {
+  width: 20%;
+  height: 30px;
+}
+#submit {
+  margin-top: 20px;
+  height: 25px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: hsl(215, 100%, 86%);
+  padding: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: hsl(224, 62%, 89%);
+  }
+}
