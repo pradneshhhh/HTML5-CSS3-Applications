@@ -5,3 +5,5 @@
 # • 🏏 Tribute Page [Link](https://codepen.io/pradneshhhh/full/zYqMzYv)
 
 # • 🚀 Product Landing Page [Link](https://codepen.io/pradneshhhh/full/rNeRdLo)
+
+# • 📜 Technical Documentation Page [Link](https://codepen.io/pradneshhhh/full/eYZXjWb)
