@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Sass : Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>Sass Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#What_You_Should_Already_Know">What You Should Already Know</a></li>
+    <li><a class="nav-link" href="#What_is_Sass?">What is Sass?</a></li>
+    <li><a class="nav-link" href="#Why_Use_Sass?">Why Use Sass?</a></li>
+    <li><a class="nav-link" href="#System_Requirements_for_Sass">System Requirements for Sass</a></li>
+    <li><a class="nav-link" href="#Sass_Variables">Sass Variables</a></li>
+    <li><a class="nav-link" href="#Sass_Variable_Scope">Sass Variable Scope</a></li>
+    <li><a class="nav-link" href="#Using_Sass_global">Using Sass global</a></li>
+    <li><a class="nav-link" href="#Sass_@import">Sass @import</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.</p>
+      <p>Sass consists of two syntaxes. The original syntax, called "the indented syntax," uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS" (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate rules within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.</p>
+    </article>
+  </section>
+  <section class="main-section" id="What_You_Should_Already_Know">
+    <header>What You Should Already Know</header>
+    <article>
+      <p>Before you continue you should have a basic understanding of the following:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_is_Sass?">
+    <header>What is Sass?
+    </header>
+    <article>
+      <ul>
+        <li>Sass stands for Syntactically Awesome Stylesheet</li>
+        <li>Sass is an extension to CSS</li>
+        <li>Sass is a CSS pre-processor</li>
+        <li>Sass is completely compatible with all versions of CSS</li>
+        <li>Sass reduces repetition of CSS and therefore saves time</li>
+        <li>Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006</li>
+        <li>Sass is free to download and use
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Why_Use_Sass?">
+    <header>Why Use Sass?</header>
+    <article>
+      <p>Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.</p>
+      <p>Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.</p>
+    </article>
+  </section>
+  <section class="main-section" id="System_Requirements_for_Sass">
+    <header>System Requirements for Sass</header>
+    <article>
+      <ul>
+        <li>Operating system - Sass is platform independent</li>
+        <li>Browser support - Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera</li>
+        <li>Programming language - Sass is based on Ruby</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Sass_Variables">
+    <header>Sass Variables</header>
+    <article>
+      <p>Variables are a way to store information that you can re-use later.</p>
+      <p>With Sass, you can store information in variables, like:</p>
+      <ul>
+        <li>strings</li>
+        <li>numbers</li>
+        <li>colors</li>
+        <li>booleans</li>
+        <li>lists</li>
+      </ul>
+      <p>Sass uses the $ symbol, followed by a name, to declare variables:</p>
+      <code>$variablename: value;</code>
+      <p>The following example declares 4 variables named myFont, myColor, myFontSize, and myWidth. After the variables are declared, you can use the variables wherever you want:</p>
+      <code id="main_code">
+        $myFont: Helvetica, sans-serif;
+        $myColor: red;
+        $myFontSize: 18px;
+        $myWidth: 680px;
+
+        body {
+        font-family: $myFont;
+        font-size: $myFontSize;
+        color: $myColor;
+        }
+
+        #container {
+        width: $myWidth;
+        }
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Sass_Variable_Scope">
+    <header>Sass Variable Scope</header>
+    <article>
+      <p>Sass variables are only available at the level of nesting where they are defined.</p>
+      <p>Look at the following example:</p>
+      <code id="main_code">
+        $myColor: red;
+        h1 {
+        $myColor: green;
+        color: $myColor;
+        }
+        p {
+        color: $myColor;
+        }
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Using_Sass_global">
+    <header>Using Sass global
+    </header>
+    <article>
+      <p>The default behavior for variable scope can be overridden by using the !global switch.</p>
+      <p>!global indicates that a variable is global, which means that it is accessible on all levels.</p>
+      <code id="main_code">
+        $myColor: red;
+
+        h1 {
+        $myColor: green !global;
+        color: $myColor;
+        }
+
+        p {
+        color: $myColor;
+        }
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Sass_@import">
+    <header>Sass @import</header>
+    <article>
+      <p>Just like CSS, Sass also supports the <code id="code_single">@import</code> directive.</p>
+      <p>The <code id="code_single">@import</code> directive allows you to include the content of one file in another.</p>
+      <code id="main_code">
+        @import filename;
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li><a href="https://www.w3schools.com/sass/" target="_blank">w3schools</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank">wikipedia</a></li>
+      </ul>
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
